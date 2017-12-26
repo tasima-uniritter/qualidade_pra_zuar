@@ -13,18 +13,27 @@ PARA eu possa retirar os produtos que comprei online.</p>
 
 Critério #1: Dado que o cliente passe o cep 33018, então deve mostrar as lojas mais perto deste endereço.
 </br>
-</br>
-
 
 ### HISTÓRIA #2
 
 COMO usuário da loja </p>
 QUERO cadastrar meu email na newsletter,</p>
-PARA eu possa receber as novidades e ofertas atuais.</p>
+PARA que possa receber as novidades e ofertas atuais.</p>
 </br>
 
 --- CRITÉRIOS
 
-Critério #1: Dado que o cliente passe um email inválido, então deve mostrar uma mensagem de erro para que eu possa corrigir.
+Critério #1: Dado que o cliente passe um email inválido, então deve mostrar uma mensagem de erro.
 </br>
+
+### HISTÓRIA #3
+
+COMO usuário da loja </p>
+QUERO recuperar minha senha caso me esqueça,</p>
+PARA poder efetuar compra.</p>
+</br>
+
+--- CRITÉRIOS
+
+Critério #1: Dado que o cliente passe um email não registrado, então deve mostrar uma mensagem de erro.
 </br>
