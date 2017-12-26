@@ -34,4 +34,21 @@ describe('Protector Demo App', function() {
         
         expect(elem.getText()).toBe('Newsletter : Invalid email address.');
     });
+
+    it('should show email not registered', function() {
+        browser.waitForAngularEnabled(false);
+        
+        browser.get('http://automationpractice.com/index.php?controller=password');
+        
+        element(by.id('email')).sendKeys('rafael@gmail.com');
+        
+        element(by.id('form_forgotpassword')).submit();
+        
+        let elem = element(by.css('.alert-danger'));
+        
+        var until  =  protractor.ExpectedConditions;
+        browser.wait(until.presenceOf(elem), 25000, 'waiting...');
+        
+        expect(elem.getText()).toBe('There is 1 error\nThere is no account registered for this email address.');
+    });
 });
