@@ -13,6 +13,7 @@ PARA eu possa retirar os produtos que comprei online.</p>
 
 Critério #1: Dado que o cliente passe o cep 33018, então deve mostrar as lojas mais perto deste endereço.
 </br>
+</br>
 
 ### HISTÓRIA #2
 
@@ -24,6 +25,7 @@ PARA que possa receber as novidades e ofertas atuais.</p>
 --- CRITÉRIOS
 
 Critério #1: Dado que o cliente passe um email inválido, então deve mostrar uma mensagem de erro.
+</br>
 </br>
 
 ### HISTÓRIA #3
