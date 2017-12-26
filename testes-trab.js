@@ -1,5 +1,5 @@
 describe('Protector Demo App', function() {
-    it('should have a title', function() {
+    it('should found a store', function() {
         browser.waitForAngularEnabled(false);
         
         browser.get('http://automationpractice.com/index.php?controller=stores');
@@ -16,5 +16,22 @@ describe('Protector Demo App', function() {
         browser.wait(until.presenceOf(elem), 15000, 'waiting...');
         
         expect(elem.getText()).toBe('8 mi');
+    });
+
+    it('should show invalid email', function() {
+        browser.waitForAngularEnabled(false);
+        
+        browser.get('http://automationpractice.com/index.php');
+        
+        element(by.id('newsletter-input')).sendKeys('testessemdemial');
+        
+        element(by.name('submitNewsletter')).click();
+        
+        let elem = element(by.css('.alert-danger'));
+        
+        var until  =  protractor.ExpectedConditions;
+        browser.wait(until.presenceOf(elem), 15000, 'waiting...');
+        
+        expect(elem.getText()).toBe('Newsletter : Invalid email address.');
     });
 });
