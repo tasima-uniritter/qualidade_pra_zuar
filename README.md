@@ -1,5 +1,6 @@
 # qualidade_pra_zuar
 [![CircleCI](https://circleci.com/gh/tasima-uniritter/qualidade_pra_zuar.svg?style=svg)](https://circleci.com/gh/tasima-uniritter/qualidade_pra_zuar)
+
 ## Integrantes
 * Bruno
 * Rafael
@@ -41,4 +42,16 @@ PARA poder efetuar compra.</p>
 --- CRITÉRIOS
 
 Critério #1: Dado que o cliente passe um email não registrado, então deve mostrar uma mensagem de erro.
+</br>
+
+### HISTÓRIA #4
+
+COMO usuário da loja </p>
+QUERO ver os resultados da pesquisa de items,</p>
+PARA consultar os itens disponíveis.</p>
+</br>
+
+--- CRITÉRIOS
+
+Critério #1: Dado que o cliente pesquise por um determinado item, então deve mostrar o item pesquisado e o numero de resultados.
 </br>
