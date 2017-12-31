@@ -1,21 +1,25 @@
-describe('Protector Demo App', function() {
+'use strict';
 
+var FindStorage = require('../tests_class/FindStorage.js')
+
+describe('Protractor find storage tests', function() {
+
+    var findStorage;
+
+    beforeEach(function () {
+        findStorage = new FindStorage();
+        findStorage.init();
+    });
     
     it('should found a store', function() {
-        browser.waitForAngularEnabled(false);
-        
-        browser.get('/index.php?controller=stores');
-        
-        element(by.id('addressInput')).click();
-        
-        element(by.id('addressInput')).sendKeys('33018');
-        
-        element(by.name('search_locations')).click();
+
+        findStorage.init();
+
+        findStorage.searchAddress();
         
         let elem = element(by.css('.distance'));
-        
-        var until  =  protractor.ExpectedConditions;
-        browser.wait(until.presenceOf(elem), 15000, 'waiting...');
+
+        findStorage.waitForElement(elem);
         
         expect(elem.getText()).toBe('8 mi');
     });

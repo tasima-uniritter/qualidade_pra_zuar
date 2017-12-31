@@ -2,7 +2,7 @@
 
 var SearchItens = require('../tests_class/SearchItens.js')
 
-describe('Protector Demo App', function() {
+describe('Protractor search itens tests', function() {
 
     var searchItens;
 
