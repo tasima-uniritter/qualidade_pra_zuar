@@ -6,5 +6,6 @@ exports.config = {
 		chromeOptions: {
 			args: ["--headless","--disable-gpu","--window-size=800,600"]
 		}
-	}
+	},
+	 baseUrl: 'http://automationpractice.com'
 }

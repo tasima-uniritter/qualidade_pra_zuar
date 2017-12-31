@@ -4,7 +4,7 @@ describe('Protector Demo App', function() {
     it('should show invalid email', function() {
         browser.waitForAngularEnabled(false);
         
-        browser.get('http://automationpractice.com/index.php');
+        browser.get('/index.php');
         
         element(by.id('newsletter-input')).sendKeys('testessemdemial');
         
@@ -21,7 +21,7 @@ describe('Protector Demo App', function() {
     it('should show email not registered', function() {
         browser.waitForAngularEnabled(false);
         
-        browser.get('http://automationpractice.com/index.php?controller=password');
+        browser.get('/index.php?controller=password');
         
         element(by.id('email')).sendKeys('rafael@gmail.com');
         
@@ -35,13 +35,11 @@ describe('Protector Demo App', function() {
         expect(elem.getText()).toBe('There is 1 error\nThere is no account registered for this email address.');
     });
 
-    
-    
     it('should show create account error message', function() {
         
         browser.waitForAngularEnabled(false);
         
-        browser.get('http://automationpractice.com/index.php?controller=authentication&back=my-account');
+        browser.get('/index.php?controller=authentication&back=my-account');
         
         element(by.id('SubmitCreate')).click();
         

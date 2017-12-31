@@ -4,7 +4,7 @@ describe('Protector Demo App', function() {
     it('should found a store', function() {
         browser.waitForAngularEnabled(false);
         
-        browser.get('http://automationpractice.com/index.php?controller=stores');
+        browser.get('/index.php?controller=stores');
         
         element(by.id('addressInput')).click();
         
